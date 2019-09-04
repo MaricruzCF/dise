@@ -1,0 +1,539 @@
+
+* {
+    box-sizing: border-box;
+    font-family: "Inconsolata", Monaco, monospace;
+}
+.top {
+display: flex;
+width: 100%;
+flex-flow: wrap;
+justify-content: center;
+padding: 15px;
+}
+body {
+    background: #fff;
+    font-family: sans-serif;
+    padding-top: 0;
+    padding: 0;
+    margin: 0 
+}
+body:after {
+    content: "conócenos";
+    font-size: 10em;
+    color: #d1d9dc42;
+    display: flex;
+    position: relative;
+    margin-bottom: -698px;
+    left: -115px;
+    bottom: 698px;
+    float: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transform: rotate(-90deg);
+  }
+  
+
+header {
+    background-color: #fce176;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    position: relative;
+    top:0;
+    overflow: hidden;
+}
+header h1{
+    font-style: 40px;
+    color: rgb(8, 6, 6);
+    line-height: 15px;
+    font-weight: 40px;
+}
+header h1 i{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logo{
+   margin-right: 15px;
+   border-radius: 50%;
+}
+header nav{
+    position: relative;
+    bottom: 0;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    background: #fb5336;
+}
+header nav a{
+    color: #fff;
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 8pt;
+    line-height: 1;
+    text-decoration: none;
+    border-radius: 5px;
+}
+header nav a:hover{
+    background: #d1462e;
+}
+.contenido{
+    padding: 0px 5px 0px 5px;
+    margin: 0px 1px 0px 1px;
+}
+.slideM{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    width: 100%;    
+}
+.slideM .imagenes{
+    width: 100%;
+    overflow: hidden;
+    height: 500px;
+}
+.slideM .imagen{
+    width: auto;
+    min-width: 100%;
+    min-height: 100%;
+    align-self: center;
+    height: 100%;
+}
+.slideM button{
+    background: none;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 40px;
+    color: #eaeaea;
+}
+.slideM .puntos{
+    bottom: 0;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+}
+.puntos button{
+    font-size: 20px;
+}
+button.in,
+button:active{
+    color:  #fff;
+}
+button:focus{
+    color:  #fff;
+}
+.slideM .fa .fa-circle{
+    color: #4b4848
+}
+.buton{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.slideM .fa-arrow-left{
+    float: left;
+    align-self: flex-start
+}
+.slideM .fa-arrow-right{
+    float: right;
+    align-self: flex-end
+}
+
+.sub{
+    margin: 10px;
+    float: right;
+    text-align: center;
+}
+.sub p{
+    width: 280px;
+    color: #0f547c;
+    padding-left: 40px;
+}
+.sub h3{
+    color: #1196e4;
+    width: 260px;
+}
+.sub a{
+    color: rgb(6, 175, 48);
+    margin: 5px;
+    float: right;
+}
+.sub img{
+    float: left;
+    top: 40px;
+    padding: 3px;
+}
+.tex{
+    text-align: center;
+    top: 100px;
+    float: right;
+    border-radius: 5px;
+    border-color: #eaeaea;
+    background-color: #f5f5f5;
+    margin-right: 50px;
+}
+.cont{
+    width: 100%;
+    justify-content: space-between;
+    overflow: hidden;
+    display: flex;
+    padding: 0px 39px 23px 77px;
+}
+.texto {/*contenor texto*/
+    text-align: justify;
+    width: 340px;
+    margin-right: 20px;
+    color: #0f547c;
+    margin-bottom: 80px;
+    float: left;
+    margin-top: 70px;
+    margin-left: 29px;
+}
+.texto p{
+    width: 205px;
+    margin-right: 20px;
+    margin-left: 98px;
+    margin-bottom: 40px;
+}
+.texto h5{
+    float: right;
+    margin: 0;
+}
+.texto a{
+    color: rgb(6, 175, 48);
+    margin: 5px;
+    float: right;
+}
+
+.footer {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    background-color: #fb5437;
+    color: white;
+    text-align: center;
+}
+.footer nav{
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+}
+.footer nav a{
+    display: inline-block;
+    padding: 15px 15px;
+    line-height: 1;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.footer-top nav{ 
+    background: #fb5437;
+    display: flex;
+    height: 80px;
+    margin: 0px;
+    font-size: 12pt;
+    justify-content: center;
+    align-items: flex-end;
+}
+.footer-top nav a{
+    color: #fff;
+    width: 230px;
+    text-align: left;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+}
+.footer-top nav a:hover{
+    background: #d1462e;
+}
+.footer-bot nav{
+    background: #fff;
+    font-size: 8pt;
+    margin-bottom: 5px;
+}
+.footer-bot nav a{
+    color: black;
+}
+.footer-bot nav a:hover{
+    background: rgb(204, 203, 203);
+}
+.dere{
+    float: right;
+}
+.fa{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    background: none;
+}
+.footer-top .fa:before {
+    margin-left: -25px;
+    font-size: 30px;
+    float: left;
+    padding-top: 10px;
+    padding-right: 8px;
+}
+
+.circulo {
+    width: 100%;
+    height: 328px;  
+    background-image: url('cir.PNG');
+    background-repeat: no-repeat;
+}
+
+body:before {
+    display: block;
+    content: ''
+}
+
+@media (min-width:1035px){
+    header button{
+        display: none;
+    } 
+    .img-circle{
+        overflow: hidden;
+        width: 50%;
+        height: 500px;
+        padding: 100px 70px 15px 10px
+    }
+    
+    .img-circle img{
+        border-radius: 50%;
+        position: relative;
+        float: left;
+    }
+    
+    .img1 img{
+        width: 150px;
+        height: 150px;
+        left: 190px;
+        top: 115px;
+    }
+    .img2 img{
+        width: 150px;
+        height: 150px;
+        left: 34px;
+        top: 0px;
+    }
+    .img3 img{
+        width: 200px;
+        height: 200px;
+        left: -263px;
+        top: 30px;
+        border: 2px solid rgb(17, 150, 228);
+    }
+}
+@media (max-width:1030px){
+    header nav.active {
+        height: auto;
+        position: relative;
+        display: inline-block;
+    }
+    header nav a.fa,
+    header nav a {
+        width: 100%;
+        display: none;
+    }
+    header nav.active a {
+        display: block;
+    }
+    header button{
+        float: right;
+        border: none;
+        width: 100%;
+        height: 40px;
+        font-size: 25px;
+        background: #fb5336;
+        color: #fff;
+        display: flex;
+        justify-content: flex-end;
+        padding: 12px 10px 5px 3px;
+    }
+    .sub{
+        padding: 0 40px 0 40px;
+        margin: 0;
+        float: right;
+    }
+   
+    .img-circle{
+        overflow: hidden;
+        width: 50%;
+        height: 500px;
+        padding: 100px 70px 15px 10px
+    }
+    
+    .img-circle img{
+        border-radius: 50%;
+        position: relative;
+        float: left;
+    }
+    
+    .img1 img{
+        width: 150px;
+        height: 150px;
+        left: 210px;
+        top: 115px;
+    }
+    .img2 img{
+        width: 150px;
+        height: 150px;
+        left: 34px;
+        top: 0px;
+    }
+    .img3 img{
+        width: 200px;
+        height: 200px;
+        left: 38px;
+        top: -90px;
+        border: 2px solid rgb(17, 150, 228);
+    }
+    .footer nav{
+        height: auto;
+        position: relative;
+        display: block;
+    }
+    .footer nav a{
+        width: 100%;
+        font-size: 12pt;
+    }
+    .dere{
+        float: none;
+    }
+}
+@media (max-width:500px){
+       /*marca de agua*/
+    body:after {
+        content: "conócenos";
+        font-size: 4em;
+        color: #d1d9dc42;
+        display: flex;
+        position: relative;
+        left: -121px;
+        padding-top: 30px;
+        bottom: 989px;
+        float: left;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        transform: rotate(-90deg);
+    }
+    header nav.active {
+        height: auto;
+    }
+    header nav a.fa,
+    header nav a {
+        width: 100%;
+        display: none;
+    }
+    header nav.active a {
+        display: block
+    }
+    header button{
+        float: right;
+        border: none;
+        width: 100%;
+        height: 40px;
+        font-size: 25px;
+        background: #fb5336;
+        color: #fff;
+        display: flex;
+        justify-content: flex-end;
+        padding: 12px 10px 5px 3px;
+    }
+    /*Encabezado*/
+    header h1{
+        font-size: 14pt;
+        color: rgb(8, 6, 6);
+        line-height: 15px;
+    }
+    header h1 i{
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .logo{
+        margin-right: 15px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;    
+    }
+    header nav
+    /*imagen*/
+    .ima{
+        width: 100%;
+        height: auto;
+    } 
+    .slideM .imagenes{
+        width: 100%;
+        overflow: hidden;
+        height: 100%;
+    }
+    .slideM .imagen{
+        width: auto;
+        min-width: 100%;
+        min-height: 100%;
+        align-self: center;
+        height: 200px;
+    }
+    .slideM button {
+        font-size: 20px;
+    }
+    .sub{
+        padding: 0 40px 0 40px;
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+    .tex{
+        margin: 0;
+        float: none
+    }
+    /*contenido*/
+    .cont {
+        display: inherit;
+        padding: 15px
+    }
+    .texto {
+        width: 100%;
+        margin: 0;
+    }
+    .texto p {
+        width: 100%;
+        margin: 0;
+    }
+    .img-circle{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0;
+        padding: 15px 0;
+    }   
+    .img1 img{
+        width: 130px;
+        height: 130px;
+        left: 173px;
+        top: 115px;
+    }
+    .img2 img{
+        width: 130px;
+        height: 130px;
+        left: 20px;
+        top: 0px;
+    }
+    .img3 img{
+        width: 180px;
+        height: 180px;
+        left: 28px;
+        top: -87px;
+        border: 2px solid rgb(17, 150, 228);
+    }
+    .circulo{
+        width: 100%;
+        height: 1px;
+        position: relative;
+        background-image: url('cir.png');
+        background-size: contain;
+    }
+
+}

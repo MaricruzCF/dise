@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- metadato visual responcivo-->
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <!-- metadato de caracteres extraños-->       
+        <meta charset="utf-8">
+        <title>Diseño</title>
+        <link href="style-css.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/9325324b2d.css">
+    </head>
+    <body >
+            
+        <!--Cabesera -->
+        <header>
+            <!--logo-->
+        <div class="top">
+            <img src="logo.png" class="logo"width="60" height="60"/>
+            <h1>Glosa histórica de Zacatecas</h1>
+            
+        </div >
+                <nav id='menu'>
+                    <button id='active'> <i class="fa fa-bars" aria-hidden="true"></i></button>                 
+                    <a href="#">Inicio</a>
+                    <a href="#">Nuestra historia</a>
+                    <a href="#">Recursos</a>
+                    <a href="#">Comunidades</a>
+                    <a href="#">Entre cronistas</a>
+                    <a href="#">Exploradores de la historia</a>
+                    <a href="https://vimeo.com/es/" target="_blank" class="fa fa-vimeo-square" aria-hidden="true"></a>
+                    <a href="https://facebook.com" target="_blank" class="fa fa-facebook" aria-hidden="true"></a>
+                    <a href="https://twitter.com/?lang=es" class="fa fa-twitter" aria-hidden="true"></a>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram" aria-hidden="true"></a>
+                    <a href="https://www.linkedin.com/" class="fa fa-linkedin" aria-hidden="true"></a>
+                    <a href="https://www.youtube.com/?gl=MX&hl=es-419" class="fa fa-youtube-play" aria-hidden="true"></a>
+                </nav>
+        </header>
+        <div class="contenido">
+        <div class="slideM">
+            <div class="buton">
+                <button onclick="previus()"><i class="fa fa-chevron-left" aria-hidden="true"></i></button> 
+                <button onclick="next()"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>  
+            </div> 
+            <div class="imagenes">       
+                <div class="imagen"><IMG src="fondo.png" width="100%" height="100%" /></div>
+                <div class="imagen"> <IMG src="ima.jpg" width="100%" height="100%" /></div>
+                <div class="imagen"> <IMG src="ima_3.jpg" width="100%" height="100%" /></div>
+                <div class="imagen"> <IMG src="ima_2.jpg" width="100%" height="100%" /></div>
+            </div>
+            <div class="puntos"></div>
+        </div>
+        <div class="sub"> 
+            <h3>Suscribete al bolantín</h3>
+            <IMG src="avi.png"  width="40" height="40"/>
+            <p>Ingresa tu correo electronico para recivir novedades</p>
+            <input class="tex" type="text" name="caja" placeholder="ejemplo@ejemplo.eje">
+        <br>
+            <a href="#">Suscribir</a>
+        </div>
+        <div class="cont">
+           <div class="texto">
+                <p> Zacatecas es la opción
+                    un tesoro colonial declarado Patrimonio de la Humanidad por su arquitectura, 
+                    su traza urbana y su la irregularidad de la alineación de sus calles. 
+                    Zacatecas, oficialmente llamado Estado Libre y Soberano de Zacatecas 
+                    es uno de los treinta y un estados que, junto con la Ciudad de México, 
+                    forman los Estados Unidos Mexicanos.
+                </p>
+                <h5>Dr. Mercedez Vega</h5>
+                <br>
+                <a href="#">ver mas</a>
+            </div>
+            <div class="img-circle">
+                <div class="img1">
+                    <IMG src="ima.jpg" width="400" height="400"/>
+                </div>
+                <div class="img2">
+                    <IMG  src="ima_2.jpg"  width="300" height="300"/>         
+                </div>
+                <div class="img3">
+                    <IMG  src="ima_3.jpg" width="300" height="300"/>  
+                </div>     
+            </div>
+           
+        </div>
+        <div class="circulo" >  </div>
+    </div>
+        <div class="footer">
+            <div class="footer-top">
+                <nav>                    
+                    <a class="fa fa-map-marker" fa-2x aria-hidden="true" href="#">    Domicilio: Del Roble. No. 333 Los Jazmines; CP9800 Zacatecas, Zac. México</a> 
+                    <a class="fa fa-phone" aria-hidden="true" href="#">    Telefono: 01-800-31000</a>
+                    <a class="fa fa-envelope-o" aria-hidden="true" href="#">    Correo electronico: Zacatecas@gob.mx</a>
+                    <a class="fa fa-globe" aria-hidden="true" href="#">   Pagina web: www.zacatecas.gob.mx</a>                
+                </nav>                  
+            </div> 
+            <div class="footer-bot">
+                <nav>
+                    <a href="#">Publicaciones</a>
+                    <a href="#">Conocenos</a>
+                    <a href="#">Suscripciones</a>
+                    <a href="#">Contatanos</a>
+                    <a href="#" class="dere">Derechos Reservados</a>
+            </nav>
+            
+            </div>
+        </div>  
+
+
+        <script>
+            var menu = document.getElementById('menu');
+            document.getElementById('active').addEventListener('click',function(){
+                if(menu.getAttribute('class')!='active'){
+                    menu.setAttribute('class','active');
+                }
+                else{
+                    menu.setAttribute('class','');
+                }
+            });
+            
+
+            var slideIndex=0;
+            var slides = document.getElementsByClassName('imagen');
+            var ctrls = document.getElementsByClassName('puntos');
+            var ct_slide = document.getElementsByClassName('ct-slides');
+            var time;
+            carrusel(slideIndex++); 
+
+            function previus(){
+                slideIndex = slideIndex-1;
+                if(slideIndex<1) 
+                slideIndex = slides.length;
+                carrusel(slideIndex);
+            }
+            function next(){
+                carrusel(slideIndex++);                   
+            } 
+            function punto(n){
+                slideIndex=n;
+                carrusel(slideIndex++);
+            }
+            
+            function carrusel(){
+                ctrls[0].innerHTML="";
+                console.log(ctrls);
+                for(var i =0; i < slides.length; i++){
+                    slides[i].style.display="none";
+                    ctrls[0].innerHTML += "<button onclick='punto("+i+")' class='ct-slides'><i class='fa fa-circle' aria-hidden='true'></i></button>";
+                }
+                if(slideIndex > slides.length){
+                    slideIndex = 1;
+                }
+                slides[slideIndex-1].style.display="block"; //imagen
+                ct_slide[slideIndex-1].setAttribute('class','ct-slides in'); //control punto
+                clearTimeout(time);
+                time = setTimeout(function(){
+                    carrusel(slideIndex++);
+                },3000);
+            }
+              
+        </script>  
+    </body>
+</html>
